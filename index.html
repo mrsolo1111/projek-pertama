@@ -1,48 +1,151 @@
 <!DOCTYPE html>
 <html lang="ms">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Saya</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background: #111;
-            color: white;
-            padding-top: 100px;
-        }
+<title>RAF Carwash</title>
 
-        h1 {
-            font-size: 40px;
-        }
+<style>
+* {
+    box-sizing: border-box;
+}
 
-        p {
-            font-size: 20px;
-        }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #080808;
+    color: white;
+    text-align: center;
+}
 
-        button {
-            padding: 15px 25px;
-            font-size: 18px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-        }
-    </style>
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    background:
+        linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.85)),
+        linear-gradient(135deg, #111, #222);
+}
+
+.logo {
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.logo span {
+    color: #00aaff;
+}
+
+h1 {
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #ccc;
+    max-width: 600px;
+}
+
+.services {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.card {
+    background: #151515;
+    padding: 20px;
+    border-radius: 15px;
+    width: 160px;
+    border: 1px solid #333;
+}
+
+.card h3 {
+    margin: 5px 0;
+    color: #00aaff;
+}
+
+.card p {
+    margin: 5px 0;
+}
+
+.whatsapp {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 16px 28px;
+    border-radius: 12px;
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.whatsapp:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    margin-top: 30px;
+    color: #888;
+    font-size: 14px;
+}
+</style>
 </head>
 
 <body>
 
-    <h1>🔥 Website Saya</h1>
+<section class="hero">
 
-    <p>Saya sedang belajar GitHub menggunakan Termux.</p>
+    <div class="logo">
+        RAF <span>CARWASH</span> 🚗
+    </div>
 
-    <button onclick="alert('Berjaya! 🎉')">
-        Tekan Saya
-    </button>
+    <h1>Kereta Bersih, Hati Pun Senang! ✨</h1>
+
+    <p class="subtitle">
+        Servis cucian kereta yang bersih, kemas dan berbaloi.
+        Hantar kereta anda kepada RAF Carwash!
+    </p>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>🚗 Cuci Biasa</h3>
+            <p>RM10</p>
+        </div>
+
+        <div class="card">
+            <h3>✨ Cuci Premium</h3>
+            <p>RM20</p>
+        </div>
+
+        <div class="card">
+            <h3>💎 Polish</h3>
+            <p>RM50</p>
+        </div>
+
+    </div>
+
+    <a class="whatsapp"
+       href="https://wa.me/6XXXXXXXXXX?text=Assalamualaikum%20RAF%20Carwash%2C%20saya%20nak%20tempah%20servis%20cuci%20kereta."
+       target="_blank">
+       📲 Tempah Sekarang WhatsApp
+    </a>
+
+    <footer>
+        © 2026 RAF Carwash
+    </footer>
+
+</section>
 
 </body>
 </html>
-
